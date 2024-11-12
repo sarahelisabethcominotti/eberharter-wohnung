@@ -29,23 +29,23 @@ function ContactForm() {
     };
   
     return (
-        <div className="contact-section">
+        <div className="contact-form">
         <form onSubmit={onSubmit}>
-          <div className="sender-details">
+          <div>
             <div>
-              <p className="neon-text">Name: </p>
+              <p>Name: </p>
               <input type="text" name="name" required placeholder="Your Name"/>
             </div>
             <div>
-              <p className="neon-text">Lastname: </p>
+              <p>Lastname: </p>
               <input type="text" name="lastname" required placeholder="Your Lastname"/>
             </div>
           </div>
           <div>
-            <p className="neon-text">Email:</p>
+            <p>Email:</p>
             <input type="email" name="email" required placeholder="Your Email" />
           </div>
-          <p className="neon-text ">Message</p>
+          <p>Message</p>
           <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
           <br></br>
           <button type="submit">Submit Form</button>
