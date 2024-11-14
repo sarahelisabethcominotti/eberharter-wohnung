@@ -2,7 +2,7 @@ import React from 'react'
 // const CONTACT_FORM_API = import.meta.env.REACT_APP_CONTACT_FORM_ACCESS_KEY
 
 
-function ContactForm() {
+function Contacts() {
     const [result, setResult] = React.useState("");
 
     const onSubmit = async (event) => {
@@ -29,7 +29,7 @@ function ContactForm() {
     };
   
     return (
-        <div className="contact-form">
+        <section>
         <form onSubmit={onSubmit}>
           <div>
             <div>
@@ -51,9 +51,9 @@ function ContactForm() {
           <button type="submit">Submit Form</button>
         </form>
         <span>{result}</span>
-      </div>
+      </section>
     );
   
 }
 
-export default ContactForm
+export default Contacts

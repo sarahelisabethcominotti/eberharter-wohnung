@@ -1,17 +1,22 @@
 import Navigation from "./components/Navigation";
-import Main from "./pages/Main";
 import "./index.css";
+import Contacts from "./components/Contacts";
+import Welcome from "./components/Welcome";
+import Gallery from "./components/Gallery";
+import Services from "./components/Services";
+import Location from "./components/Location";
 
 function App() {
   return (
     <div className="App">
-      <Navigation/>
-      <Main/>
-      {/* <Navigation/>
-      <Welcome/>
-      <ContactForm/>
-      <Booking/>
-      <Footer/> */}
+      <main>
+        <Navigation />
+        <Welcome />
+        <Gallery />
+        <Services />
+        <Location />
+        <Contacts />
+      </main>
     </div>
   );
 }
