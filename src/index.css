@@ -2,23 +2,85 @@
   text-align: center;
 }
 
-.App-header {
+main {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  /* margin: auto;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  font-size: calc(10px + 2vmin);
+  max-width: 696px; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 10;
+  a {
+    text-decoration: none;
+    color: #282c34;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Each section takes full viewport height */
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Different background colors for each section for clarity */
+#welcome {
+  background: #a1c4fd; /* Light blue */
+  color: white;
+}
+
+#gallery {
+  background: #c2e9fb; /* Soft blue */
+  color: #333;
+}
+
+#services {
+  background: #fbc2eb; /* Soft pink */
+  color: #333;
+}
+
+#location {
+  background: #c5fbc2; /* Soft pink */
+  color: #333;
 }

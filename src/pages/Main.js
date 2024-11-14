@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 
 function Main() {
   return (
-    <main className="App-main">
+    <main>
       <Routes>
         <Route exact path="/" element={<Welcome/>}></Route>
         <Route exact path="/contact" element={<ContactForm/>}></Route>

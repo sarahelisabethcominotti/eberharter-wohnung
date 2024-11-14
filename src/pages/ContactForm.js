@@ -1,5 +1,5 @@
 import React from 'react'
-const CONTACT_FORM_API = import.meta.env.VITE_CONTACT_FORM_ACCESS_KEY
+// const CONTACT_FORM_API = import.meta.env.REACT_APP_CONTACT_FORM_ACCESS_KEY
 
 
 function ContactForm() {
@@ -10,7 +10,7 @@ function ContactForm() {
       setResult("Sending....");
       const formData = new FormData(event.target);
   
-      formData.append("access_key", CONTACT_FORM_API);
+    //   formData.append("access_key", CONTACT_FORM_API);
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
