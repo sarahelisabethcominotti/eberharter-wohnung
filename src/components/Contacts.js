@@ -29,7 +29,7 @@ function Contacts() {
     };
   
     return (
-        <section>
+        <section id="contacts">
         <form onSubmit={onSubmit}>
           <div>
             <div>
