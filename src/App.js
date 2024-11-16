@@ -69,10 +69,10 @@ function App() {
   useEffect(() => {
     if (data) {
       // const cards = data.data.portfolioCards
-      setDescription(data.description.data);
-      setServices(data.services.data);
-      setImages(data.images.data);
-      console.log(data.services.data);
+      setDescription(data.description.data.description);
+      setServices(data.services.data.services);
+      setImages(data.images.data.images);
+      // console.log(data.services.data.services);
       // console.log(data);
       // console.log(data);
     }
@@ -88,14 +88,14 @@ function App() {
         <Navigation />
         <ImagesContext.Provider value={images}>
           <DescriptionContext.Provider value={description}>
-            <Welcome />
+            <Welcome images={images} />
           </DescriptionContext.Provider>
           <Gallery />
         </ImagesContext.Provider>
 
-        <ServicesContext.Provider value={services}>
+        {/* <ServicesContext.Provider value={services}> */}
           <Services />
-        </ServicesContext.Provider>
+        {/* </ServicesContext.Provider> */}
         <Location />
         <Contacts />
       </main>
