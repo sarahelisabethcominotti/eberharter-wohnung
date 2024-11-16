@@ -32,7 +32,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  background: rgba(255, 255, 255, 0.8);
   /* padding: 10px; */
   display: flex;
   justify-content: space-between;
@@ -52,42 +52,60 @@ nav {
 }
 
 
-/* Each section takes full viewport height */
 section {
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-/* Different background colors for each section for clarity */
 #welcome {
-  background: #a1c4fd; /* Light blue */
+  background: #a1c4fd;
   color: white;
 }
 
 #gallery {
-  background: #c2e9fb; /* Soft blue */
+  background: #c2e9fb;
   color: #333;
 }
 
 #services {
-  background: #fbc2eb; /* Soft pink */
+  background: #fbc2eb;
   color: #333;
 }
 
 #location {
-  background: #c5fbc2; /* Soft pink */
+  background: #c5fbc2;
   color: #333;
 }
 
-.title-left {
-  justify-content: space-around;
-  margin-top: 40px;
+.map-container {
+  height: 450px;
+  width: 90%;
+  z-index: 1;
 }
 
-.title-right {
-  flex-direction: row-reverse;
-  justify-content: space-around;
+@media screen and (max-width: 1000px) {
+  /* Navigation */
+}
+
+
+/* tablet/desktop */
+@media screen and (min-width: 600px) {
+  .title-left {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  
+  .title-right {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .map-container {
+    width: 50%;
+  }
+  
 }
