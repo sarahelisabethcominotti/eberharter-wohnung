@@ -59,8 +59,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-
 }
 
 /* Different background colors for each section for clarity */
@@ -85,11 +83,11 @@ section {
 }
 
 .title-left {
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 40px;
 }
 
 .title-right {
   flex-direction: row-reverse;
-  justify-content: space-between;
-
+  justify-content: space-around;
 }
