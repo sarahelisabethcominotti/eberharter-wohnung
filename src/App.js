@@ -3,6 +3,7 @@ import "./index.css";
 import Contacts from "./components/Contacts";
 import Welcome from "./components/Welcome";
 import Gallery from "./components/Gallery";
+import About from "./components/About";
 import Services from "./components/Services";
 import Location from "./components/Location";
 import { useState, useEffect, createContext } from "react";
@@ -93,6 +94,9 @@ function App() {
           <Gallery />
         </ImagesContext.Provider>
 
+        {/* <DescriptionContext.Provider value={description}> */}
+          <About />
+        {/* </DescriptionContext.Provider> */}
         {/* <ServicesContext.Provider value={services}> */}
           <Services />
         {/* </ServicesContext.Provider> */}

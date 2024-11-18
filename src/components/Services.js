@@ -6,7 +6,7 @@ import { RiBreadLine } from "react-icons/ri";
 
 function Services() {
   return (
-    <section id="services">
+    <section id="services" className="title-right">
       <h2>Services</h2>
       <ul className="services-list">
         <li>

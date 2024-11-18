@@ -18,7 +18,9 @@ function Welcome() {
           : {}
       }
     >
-      <h1>Welcome to Apartment Eberharter</h1>
+      <h1 style={{marginBottom: "10px"}}>Welcome to Apartment Eberharter</h1>
+      <p style={{fontSize: "20px", padding: "0", margin: "0px"}}>Kaltenbach, Zillertal, Austria</p>
+
     </section>
   );
 }
