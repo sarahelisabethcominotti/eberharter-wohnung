@@ -3,12 +3,12 @@ import React from "react";
 function Navigation() {
   return (
     <nav>
-        <h1><a href="#welcome">Eberharter Wohnung</a></h1> 
+        <h1><a href="#welcome" className="hover-underline">Eberharter Wohnung</a></h1> 
         <div>
-        <a href="#gallery">Gallery</a>
-        <a href="#services">Services</a>
-        <a href="#location">Location</a>
-        <a href="#contacts">Contact Us</a>
+        <a href="#gallery" className="hover-underline">Gallery</a>
+        <a href="#services" className="hover-underline">Services</a>
+        <a href="#location" className="hover-underline">Location</a>
+        <a href="#contacts" className="hover-underline">Contact Us</a>
         </div>
 
 
