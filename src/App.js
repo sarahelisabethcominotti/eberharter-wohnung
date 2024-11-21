@@ -52,7 +52,6 @@ function App() {
             },
             body: JSON.stringify({ query: getAllImages }),
           }),
-          
         ]);
 
       if (!descriptionResponse.ok)
@@ -93,13 +92,12 @@ function App() {
           </DescriptionContext.Provider>
           <Gallery />
         </ImagesContext.Provider>
-
-        {/* <DescriptionContext.Provider value={description}> */}
-          <About />
-        {/* </DescriptionContext.Provider> */}
         {/* <ServicesContext.Provider value={services}> */}
-          <Services />
+        <Services />
         {/* </ServicesContext.Provider> */}
+        {/* <DescriptionContext.Provider value={description}> */}
+        <About />
+        {/* </DescriptionContext.Provider> */}
         <Location />
         <Contacts />
       </main>

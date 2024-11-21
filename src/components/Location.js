@@ -17,7 +17,7 @@ L.Marker.prototype.options.icon = defaultIcon;
 
 const Location = () => {
   return (
-    <section id="location" className="title-left">
+    <section id="location" className="title-right">
       <h2>Location</h2>
       <div className="map-container">
         <MapContainer

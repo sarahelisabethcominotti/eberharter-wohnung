@@ -7,6 +7,7 @@ function Navigation() {
         <div>
         <a href="#gallery" className="hover-underline">Gallery</a>
         <a href="#services" className="hover-underline">Services</a>
+        <a href="#about" className="hover-underline">About</a>
         <a href="#location" className="hover-underline">Location</a>
         <a href="#contacts" className="hover-underline">Contact Us</a>
         </div>

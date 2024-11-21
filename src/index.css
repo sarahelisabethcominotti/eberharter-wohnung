@@ -91,6 +91,13 @@ section {
 #about {
   background: #4A6651;
   color: #FFFFFF;
+  div {
+    max-width: 60%;
+    p {
+      font-size: 13px;
+    }
+  }
+  
 }
 
 #gallery {
@@ -101,6 +108,19 @@ section {
 #services {
   background: #8E8071;
   color: #FFFFFF;
+  .services-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    li {
+      
+      border: 2px solid #FFFFFF;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px;
+    }
+  }
 }
 
 #location {
@@ -123,19 +143,7 @@ section {
   z-index: 1;
 }
 
-.services-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  li {
-    
-    border: 2px solid #FFFFFF;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-  }
-}
+
 
 
 /* tablet/desktop */

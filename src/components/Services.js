@@ -3,6 +3,8 @@ import { FaWifi, FaParking, FaTv, FaShower } from "react-icons/fa";
 import { MdLocalLaundryService } from "react-icons/md";
 import { GiSkis } from "react-icons/gi";
 import { RiBreadLine } from "react-icons/ri";
+import { LuFlower2 } from "react-icons/lu";
+
 
 function Services() {
   return (
@@ -29,6 +31,9 @@ function Services() {
         </li>
         <li>
           <FaShower /> Toiletries
+        </li>
+        <li>
+        <LuFlower2 /> Garden
         </li>
       </ul>
     </section>
