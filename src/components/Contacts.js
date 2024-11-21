@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
+import { ToggleContext } from "../App";
 
 const CONTACT_FORM_API = process.env.REACT_APP_CONTACT_KEY
 
 function Contacts() {
+  const isChecked = useContext(ToggleContext);
 
 
   const [result, setResult] = React.useState("");
@@ -32,7 +34,7 @@ function Contacts() {
 
   return (
     <section id="contacts" className="title-left">
-      <h2>Contact us</h2>
+      <h2>{isChecked.isChecked ? "Contact Us" : "Kontakt"}</h2>
       <div>
         <form onSubmit={onSubmit}>
           <div>

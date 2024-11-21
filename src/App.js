@@ -6,7 +6,7 @@ import Gallery from "./components/Gallery";
 import About from "./components/About";
 import Services from "./components/Services";
 import Location from "./components/Location";
-import { useState, useEffect, createContext } from "react";
+import { useState, useEffect, createContext, useContext } from "react";
 import { useQuery } from "react-query";
 import { SERVICES_API, getAllServices } from "./SERVICES_API";
 import { IAMGES_API, getAllImages } from "./IMAGES_API";
@@ -17,11 +17,14 @@ import { DESCRIPTION_API, getDescription } from "./DESCRIPTION_API";
 export const DescriptionContext = createContext();
 export const ServicesContext = createContext();
 export const ImagesContext = createContext();
+export const ToggleContext = createContext();
 
 function App() {
   const [description, setDescription] = useState([]);
   const [images, setImages] = useState([]);
   const [services, setServices] = useState([]);
+  const [isChecked, setIsChecked] = useState(false);
+
   // console.log(HYGRAPH_API)
   const { isLoading, error, data } = useQuery({
     queryKey: ["images"],
@@ -69,11 +72,11 @@ function App() {
   useEffect(() => {
     if (data) {
       // const cards = data.data.portfolioCards
-      setDescription(data.description.data.description);
+      setDescription(data.description.data.descriptions);
       setServices(data.services.data.services);
       setImages(data.images.data.images);
       // console.log(data.services.data.services);
-      // console.log(data);
+      console.log("test", data.description.data);
       // console.log(data);
     }
   }, [data]);
@@ -85,21 +88,23 @@ function App() {
   return (
     <div className="App">
       <main>
-        <Navigation />
-        <ImagesContext.Provider value={images}>
+        <ToggleContext.Provider value={{ isChecked, setIsChecked }}>
+          <Navigation />
+          <ImagesContext.Provider value={images}>
+            {/* <DescriptionContext.Provider> */}
+              <Welcome images={images} />
+            {/* </DescriptionContext.Provider> */}
+            <Gallery />
+          </ImagesContext.Provider>
+          {/* <ServicesContext.Provider value={services}> */}
+          <Services />
+          {/* </ServicesContext.Provider> */}
           <DescriptionContext.Provider value={description}>
-            <Welcome images={images} />
+            <About description={description}/>
           </DescriptionContext.Provider>
-          <Gallery />
-        </ImagesContext.Provider>
-        {/* <ServicesContext.Provider value={services}> */}
-        <Services />
-        {/* </ServicesContext.Provider> */}
-        {/* <DescriptionContext.Provider value={description}> */}
-        <About />
-        {/* </DescriptionContext.Provider> */}
-        <Location />
-        <Contacts />
+          <Location />
+          <Contacts />
+        </ToggleContext.Provider>
       </main>
     </div>
   );

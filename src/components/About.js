@@ -1,9 +1,20 @@
-import React from "react";
+import React, {useContext} from "react";
+import { DescriptionContext } from "../App";
+import { ToggleContext } from "../App";
 
 function About() {
+  const description = useContext(DescriptionContext);
+  const isChecked = useContext(ToggleContext);
+
+
   return (
     <section id="about" className="title-left">
-      <h2>About</h2>
+      <h2>{isChecked.isChecked ? "About Us" : "Über Uns"}</h2>
+      {/* {isChecked.isChecked
+          ? <p>{description[0].descriptionEnglish}</p>
+          : <p>{description[0].descriptionGerman}</p>} */}
+      
+
       <div>
       <p>
         Welcome to Eberharter Apart in Kaltenbach in the ZillertaL. Our
