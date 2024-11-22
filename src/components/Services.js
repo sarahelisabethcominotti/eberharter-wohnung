@@ -14,28 +14,28 @@ function Services() {
       <h2>{isChecked.isChecked ? "Services" : "Dienstleistungen"}</h2>
       <ul className="services-list">
         <li>
-          <FaWifi /> Wi-Fi
+          <FaWifi />{isChecked.isChecked ? " Wi-Fi" : " WLAN"}
         </li>
         <li>
-          <MdLocalLaundryService /> Washer/Dryer
+          <MdLocalLaundryService />{isChecked.isChecked ? " Washer/Dryer" : " Waschmaschine/Trockner"}
         </li>
         <li>
-          <GiSkis /> Ski and boots storage
+          <GiSkis />{isChecked.isChecked ? " Ski storage" : " Skiraum"}
         </li>
         <li>
-          <FaParking /> Parking
+          <FaParking />{isChecked.isChecked ? " Parking" : " Parkplatz"}
         </li>
         <li>
-          <FaTv /> Cable TV
+          <FaTv /> {isChecked.isChecked ? " TV" : " Fernsehen"}
         </li>
         <li>
-          <RiBreadLine /> Fresh Bread (Fee)
+          <RiBreadLine />{isChecked.isChecked ? " Fresh bread (fee)" : " Fresches Brot (Gebühr)"}
         </li>
         <li>
-          <FaShower /> Toiletries
+          <FaShower />{isChecked.isChecked ? " Toiletries" : " Toilettenartikel"}
         </li>
         <li>
-        <LuFlower2 /> Garden
+        <LuFlower2 />{isChecked.isChecked ? " Garden" : " Garten"}
         </li>
       </ul>
     </section>
