@@ -10,7 +10,7 @@ function About() {
     <section id="about" className="title-left">
       <h2>{isChecked.isChecked ? "About Us" : "Über Uns"}</h2>
       <div>
-        {isChecked.isChecked ? (
+        {/* {isChecked.isChecked ? (
           // ? <p>{description[0].descriptionEnglish}</p>
           // : <p>{description[0].descriptionGerman}</p>
           <p
@@ -24,7 +24,7 @@ function About() {
               __html: description[0].descriptionGerman,
             }}
           />
-        )}
+        )} */}
       </div>
       {/* <div>
       <p>

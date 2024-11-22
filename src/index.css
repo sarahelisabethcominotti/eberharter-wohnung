@@ -102,6 +102,12 @@ section {
 #gallery {
   background: #f5ece4;
   color: #33312e;
+  .slider-container {
+    max-width: 90%;
+    img {
+      max-height: 200px;
+    }
+  }
 }
 
 #services {
@@ -124,6 +130,11 @@ section {
 #location {
   background: #fff9f3;
   color: #5c5248;
+  .map-container {
+    height: 450px;
+    width: 90%;
+    z-index: 1;
+  }
 }
 
 #contacts {
@@ -133,12 +144,6 @@ section {
     background-color: #7a4e3a;
     color: #ffffff;
   }
-}
-
-.map-container {
-  height: 450px;
-  width: 90%;
-  z-index: 1;
 }
 
 .toggle-switch {
@@ -233,6 +238,8 @@ section {
       }
     }
   }
+
+  
 }
 
 @media screen and (min-width: 1000px) {
