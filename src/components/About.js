@@ -10,12 +10,12 @@ function About() {
   return (
     <section id="about" className="title-left">
       <h2>{isChecked.isChecked ? "About Us" : "Über Uns"}</h2>
-      {/* {isChecked.isChecked
+      {isChecked.isChecked
           ? <p>{description[0].descriptionEnglish}</p>
-          : <p>{description[0].descriptionGerman}</p>} */}
+          : <p>{description[0].descriptionGerman}</p>}
       
 
-      <div>
+      {/* <div>
       <p>
         Welcome to Eberharter Apart in Kaltenbach in the ZillertaL. Our
         comfortable and fully equipped 90m² apartment offers plenty of space for
@@ -75,7 +75,7 @@ function About() {
         Your host, Michaela Eberharter looks forward to soon welcoming you to
         the beautiful Kaltenbach in the Zillertal.
       </p>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -40,15 +40,15 @@ function Contacts() {
           <div>
             <div>
               <p>Name: </p>
-              <input type="text" name="name" required placeholder="Your Name" />
+              <input type="text" name="name" required placeholder={isChecked.isChecked ? "Your name" : "Ihre Name"} />
             </div>
             <div>
-              <p>Lastname: </p>
+              <p>{isChecked.isChecked ? "Last name:" : "Nachname:"}</p>
               <input
                 type="text"
                 name="lastname"
                 required
-                placeholder="Your Lastname"
+                placeholder={isChecked.isChecked ? "Your Lastname" : "Ihre Nachname"}
               />
             </div>
           </div>
@@ -58,18 +58,18 @@ function Contacts() {
               type="email"
               name="email"
               required
-              placeholder="Your Email"
+              placeholder={isChecked.isChecked ? "Your email" : "Ihre Email"}
             />
           </div>
-          <p>Message</p>
+          <p>{isChecked.isChecked ? "Message" : "Nachricht"}</p>
           <textarea
             rows="5"
             name="message"
-            placeholder="Your Message"
+            placeholder={isChecked.isChecked ? "Your message" : "Ihre Nachricht"}
             required
           ></textarea>
           <br></br>
-          <button type="submit">Submit Form</button>
+          <button type="submit">{isChecked.isChecked ? "Submit" : "Einreichen"}</button>
         </form>
         <span>{result}</span>
       </div>

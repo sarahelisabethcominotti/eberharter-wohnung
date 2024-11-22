@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -6,6 +6,7 @@ import L from "leaflet";
 // Fix for Leaflet default marker icon not displaying
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import { ToggleContext } from "../App";
 
 const defaultIcon = L.icon({
   iconUrl: markerIcon,
@@ -16,9 +17,10 @@ const defaultIcon = L.icon({
 L.Marker.prototype.options.icon = defaultIcon;
 
 const Location = () => {
+  const isChecked = useContext(ToggleContext)
   return (
     <section id="location" className="title-right">
-      <h2>Location</h2>
+      <h2>{isChecked.isChecked ? "Location" : "Standort"}</h2>
       <div className="map-container">
         <MapContainer
           center={[47.297206805335435, 11.874202257442027]}
