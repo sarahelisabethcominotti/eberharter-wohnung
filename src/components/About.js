@@ -10,21 +10,23 @@ function About() {
     <section id="about" className="title-left">
       <h2>{isChecked.isChecked ? "About Us" : "Über Uns"}</h2>
       <div>
-        {isChecked.isChecked && description[0] ? (
-          // ? <p>{description[0].descriptionEnglish}</p>
-          // : <p>{description[0].descriptionGerman}</p>
-          <p
-            dangerouslySetInnerHTML={{
-              __html: description[0].descriptionEnglish,
-            }}
-          />
-        ) : (
-          <p
-            dangerouslySetInnerHTML={{
-              __html: description[0].descriptionGerman,
-            }}
-          />
-        )}
+      {description && description[0] ? (
+  isChecked.isChecked ? (
+    <p
+      dangerouslySetInnerHTML={{
+        __html: description[0].descriptionEnglish,
+      }}
+    />
+  ) : (
+    <p
+      dangerouslySetInnerHTML={{
+        __html: description[0].descriptionGerman,
+      }}
+    />
+  )
+) : (
+  <p>Loading...</p>
+)}
       </div>
       {/* <div>
       <p>
