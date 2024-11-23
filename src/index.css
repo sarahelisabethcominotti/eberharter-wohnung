@@ -42,8 +42,12 @@ nav {
   h1 {
     text-decoration: none;
     color: #282c34;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 5px;
+  }
+
+  h1 {
+    font-size: larger;
   }
   /* a:hover {
     color: #D9A48F;
@@ -59,7 +63,7 @@ nav {
     height: 5px;
     bottom: 0;
     left: 0;
-    background-color: #d9a48f;
+    background-color: #8e8071;
     visibility: hidden;
     transition: all 0.5s ease-in-out;
   }
@@ -67,7 +71,7 @@ nav {
   .hover-underline:hover::after {
     visibility: visible;
     width: 100%;
-  }
+  } 
 }
 
 section {
@@ -152,8 +156,9 @@ section {
   .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 28px;
+    margin: 0 5px 0 5px;
   }
 
   .switch input {
@@ -169,7 +174,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #d9a48f;
+    background-color: #8e8071;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -177,8 +182,8 @@ section {
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 20px;
+    width: 20px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -187,17 +192,17 @@ section {
   }
 
   input:checked + .slider {
-    background-color: #d9a48f;
+    background-color: #8e8071;
   }
 
   input:focus + .slider {
-    box-shadow: 0 0 1px #d9a48f;
+    box-shadow: 0 0 1px #8e8071;
   }
 
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
   }
 
   .slider.round {
@@ -206,6 +211,34 @@ section {
 
   .slider.round:before {
     border-radius: 50%;
+  }
+}
+
+
+#cross, #myLinks {
+  display: none;
+}
+
+.full-navigation {
+  display: none;
+}
+
+#cross, #hamburger {
+  width: 25px;
+margin-right: 20px; 
+color: #8e8071
+}
+
+#myLinks {
+  position: absolute;
+  top: 110px;
+  right: 6px;
+  background-color: #8e8071;
+  flex-direction: column;
+  a {
+    border: 2px solid white;
+    padding: 5px;
+    color: white;
   }
 }
 
@@ -222,7 +255,7 @@ section {
   }
 
   .map-container {
-    width: 50%;
+    max-width: 50%;
   }
 
   .services-list {
@@ -277,4 +310,12 @@ section {
       }
     }
   }
+
+  .icon {
+    display: none;
+  }
+  .full-navigation {
+    display: block;
+  }
+
 }
