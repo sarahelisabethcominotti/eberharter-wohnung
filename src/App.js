@@ -6,7 +6,7 @@ import Gallery from "./components/Gallery";
 import About from "./components/About";
 import Services from "./components/Services";
 import Location from "./components/Location";
-import { useState, useEffect, createContext, useContext } from "react";
+import { useState, useEffect, createContext } from "react";
 import { useQuery } from "react-query";
 import { SERVICES_API, getAllServices } from "./SERVICES_API";
 import { IAMGES_API, getAllImages } from "./IMAGES_API";
@@ -22,7 +22,7 @@ export const ToggleContext = createContext();
 function App() {
   const [description, setDescription] = useState([]);
   const [images, setImages] = useState([]);
-  const [services, setServices] = useState([]);
+  // const [services, setServices] = useState([]);
   const [isChecked, setIsChecked] = useState(false);
 
   // console.log(HYGRAPH_API)
@@ -73,7 +73,7 @@ function App() {
     if (data) {
       // const cards = data.data.portfolioCards
       setDescription(data.description.data.descriptions);
-      setServices(data.services.data.services);
+      // setServices(data.services.data.services);
       setImages(data.images.data.images);
       // console.log(data.services.data.services);
       console.log("test", data.description.data);
