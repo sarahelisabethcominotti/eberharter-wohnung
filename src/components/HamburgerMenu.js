@@ -19,7 +19,7 @@ function HamburgerMenu() {
       cross.style.display = "block";
       hamburger.style.display = "none";
 
-    //   hamburger.style.color = "#d9a48f";
+      //   hamburger.style.color = "#d9a48f";
     }
   }
   return (
@@ -42,16 +42,23 @@ function HamburgerMenu() {
           {isChecked.isChecked ? "Contact Us" : "Kontakt"}
         </a>
       </div>
-      <a
-        aria-label="Open hamburger menu"
-        href="javascript:void(0);"
-      className="icon"
+      <button
+        type="button"
+        className="icon"
+        style={{
+          background: "none",
+          border: "none",
+          padding: 0,
+          cursor: "pointer",
+        }}
         onClick={hamburgerToggle}
       >
-        <p id="hamburger"><IoMenu /></p>
+        <p id="hamburger">
+          <IoMenu />
+        </p>
 
         <p id="cross">X</p>
-      </a>
+      </button>
     </div>
   );
 }

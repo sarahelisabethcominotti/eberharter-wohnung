@@ -214,6 +214,11 @@ section {
   }
 }
 
+.mobile-navigation {
+  button {
+    width: 40px
+  }
+}
 
 #cross, #myLinks {
   display: none;
@@ -224,6 +229,7 @@ section {
 }
 
 #cross, #hamburger {
+  font-size: x-large;
   width: 25px;
 margin-right: 20px; 
 color: #8e8071
