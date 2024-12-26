@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import { FaWifi, FaParking, FaTv, FaShower } from "react-icons/fa";
-import { MdLocalLaundryService } from "react-icons/md";
+import { FaWifi, FaParking, FaTv } from "react-icons/fa";
 import { GiSkis } from "react-icons/gi";
 import { RiBreadLine } from "react-icons/ri";
 import { LuFlower2 } from "react-icons/lu";
