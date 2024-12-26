@@ -10,7 +10,7 @@ function Navigation() {
     <nav>
       <h1>
        
-          {isChecked.isChecked ? "Apartment Eberharter" : "Eberharter Wohnung"}
+          {isChecked.isChecked ? "Apartment Eberharter" : "Apart Eberharter"}
     
       </h1>
       <div className="full-navigation">

@@ -17,22 +17,16 @@ function Services() {
           <FaWifi />{isChecked.isChecked ? " Wi-Fi" : " WLAN"}
         </li>
         <li>
-          <MdLocalLaundryService />{isChecked.isChecked ? " Washer/Dryer" : " Waschmaschine/Trockner"}
-        </li>
-        <li>
           <GiSkis />{isChecked.isChecked ? " Ski storage" : " Skiraum"}
         </li>
         <li>
           <FaParking />{isChecked.isChecked ? " Parking" : " Parkplatz"}
         </li>
         <li>
-          <FaTv /> {isChecked.isChecked ? " TV" : " Fernsehen"}
+          <FaTv /> {isChecked.isChecked ? " TV" : " Fernseher"}
         </li>
         <li>
-          <RiBreadLine />{isChecked.isChecked ? " Fresh bread (fee)" : " Fresches Brot (Gebühr)"}
-        </li>
-        <li>
-          <FaShower />{isChecked.isChecked ? " Toiletries" : " Toilettenartikel"}
+          <RiBreadLine />{isChecked.isChecked ? " Fresh bread (fee)" : " Frisches Brot (Gebühr)"}
         </li>
         <li>
         <LuFlower2 />{isChecked.isChecked ? " Garden" : " Garten"}

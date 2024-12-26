@@ -25,7 +25,7 @@ function Welcome() {
       <h1 style={{ marginBottom: "10px" }}>
         {isChecked.isChecked
           ? "Welcome to Apartment Eberharter"
-          : "Wilkommen zu Eberharter Wohnung"}
+          : "Wilkommen zum Apart Eberharter"}
       </h1>
       <p style={{ fontSize: "20px", padding: "0", margin: "0px" }}>
         Kaltenbach, Zillertal, {isChecked.isChecked ? "Austria" : "Österreich"}
